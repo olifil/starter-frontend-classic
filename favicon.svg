@@ -1,0 +1,29 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fond -->
+  <rect x="8" y="16" width="112" height="88" rx="16" fill="url(#gradBlue)"/>
+
+  <!-- Barre fenêtre -->
+  <circle cx="28" cy="34" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="40" cy="34" r="4" fill="#ffffff" opacity="0.7"/>
+  <circle cx="52" cy="34" r="4" fill="#ffffff" opacity="0.5"/>
+
+  <!-- Éclair (starter) -->
+  <path d="M70 48 L54 74 H66 L58 96 L86 62 H72 L80 48 Z"
+        fill="#ffffff"/>
+
+  <!-- Label SF -->
+  <text x="64" y="114"
+        font-family="Inter, Arial, sans-serif"
+        font-size="12"
+        text-anchor="middle"
+        fill="#64748b">
+    starter-frontend
+  </text>
+</svg>

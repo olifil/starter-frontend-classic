@@ -1,0 +1,300 @@
+common:
+  appName: Starter Frontend
+  cancel: Cancel
+  confirm: Confirm
+  contact: Contact us
+  delete: Delete
+  next: Next
+  previous: Previous
+  save: Save
+  selectAll: Select all
+
+home:
+  hero:
+    title: Starter Frontend
+    description: A modern Vue 3 starter kit, ready to use, with authentication, notifications, profile management and more.
+  stack:
+    label: Built with
+  features:
+    title: Included features
+    auth:
+      title: JWT Authentication
+      description: Login, registration, password reset and email verification with access and refresh tokens.
+    profile:
+      title: Profile management
+      description: Edit personal information, change email address and password, delete account.
+    notifications:
+      title: Notifications
+      description: Paginated history with read/unread marking, single or bulk deletion and channel preferences.
+    i18n:
+      title: Internationalization
+      description: Multilingual support (FR/EN) via vue-i18n and YAML files, easily extensible to other languages.
+    architecture:
+      title: Hexagonal architecture
+      description: Clear separation between domain, infrastructure and interface. Well-organized repositories, stores and types.
+    stack:
+      title: Modern stack
+      description: Vue 3, TypeScript, Vite, Pinia, Tailwind CSS v4 and shadcn-vue for fast and robust development.
+
+auth:
+  login:
+    title: Login
+    description: Enter your credentials to access your account.
+    submit: Log in
+    forgotPassword: Forgot password?
+    noAccount: Don't have an account?
+    signUp: Sign up
+  register:
+    title: Register
+    description: Create your account to get started.
+    firstName: First name
+    firstNamePlaceholder: John
+    lastName: Last name
+    lastNamePlaceholder: Doe
+    confirmPassword: Confirm password
+    termsAcceptedPrefix: I accept the
+    termsAcceptedLink: terms of service
+    submit: Sign up
+    hasAccount: Already have an account?
+    signIn: Log in
+  forgotPassword:
+    title: Forgot password
+    description: Enter your email address to receive a reset link.
+    submit: Send link
+    backToLogin: Back to login
+  reset-password:
+    title: Password reset
+    description: Enter your new password and confirm it.
+    submit: Reset password
+    success:
+      title: Password reset
+      description: Your password has been reset. You can now log in.
+  errors:
+    loginFailed: Login failed.
+    registerFailed: Registration failed.
+    forgotPasswordFailed: Failed to send reset link.
+
+field:
+  email: Email address
+  emailPlaceholder: "name{'@'}example.com"
+  password: Password
+  passwordPlaceholder: '••••••••'
+  phoneNumber: Phone number
+  phoneNumberPlaceholder: '+33612345678'
+
+validation:
+  emailRequired: Email address is required.
+  emailInvalid: Email address is not valid.
+  phoneNumberInvalid: Phone number must be in E.164 format (e.g. +33612345678).
+  passwordRequired: Password is required.
+  firstNameRequired: First name is required.
+  lastNameRequired: Last name is required.
+  passwordLength: Between 8 and 128 characters.
+  passwordLowercase: At least one lowercase letter.
+  passwordUppercase: At least one uppercase letter.
+  passwordDigit: At least one digit.
+  passwordSpecial: "At least one special character ({'@'}$!%*?&)."
+  passwordInvalidChars: Contains invalid characters.
+  confirmRequired: Confirmation is required.
+  passwordMismatch: Passwords do not match.
+  termsAcceptedRequired: You must accept the terms of service to register.
+  senderNameRequired: Sender name is required.
+  subjectRequired: Subject is required.
+  bodyRequired: Message is required.
+
+header:
+  myAccount: My account
+  profile: Profile
+  login: Log in
+  signIn: Sign in
+  logout: Log out
+
+admin:
+  nav:
+    home: Home
+    profile: Profile
+
+notifications:
+  title: Notifications
+  description: History of your received notifications.
+  empty: No notifications to display.
+  open: Open
+  markAsRead: Mark as read
+  delete: Delete
+  deleteConfirm:
+    title: Delete notification
+    description: This action is irreversible. The notification will be permanently deleted.
+    cancel: Cancel
+    confirm: Delete
+  bulkActions:
+    placeholder: Select an action
+    markAsRead: Mark as read
+    delete: Delete
+    apply: Apply
+    selected: '{count} selected'
+  bulkDeleteConfirm:
+    title: Delete notifications
+    description: This action is irreversible. The {count} selected notification(s) will be permanently deleted.
+    confirm: Delete
+
+profile:
+  title: My profile
+  description: Manage your account information and preferences.
+  info:
+    title: Personal information
+    editTitle: Edit my information
+    memberSince: Member since
+  email:
+    title: Change my email address
+    description: A confirmation email will be sent to your new address.
+    newEmail: New email address
+    currentPassword: Current password
+    successTitle: Confirmation email sent
+    successDescription: 'A confirmation email has been sent to {email}. Click the link in that email to confirm the change.'
+  password:
+    title: Change password
+    description: To change your password, please enter your current password.
+    currentPassword: Current password
+    newPassword: New password
+    confirmNewPassword: Confirm new password
+  notifications:
+    title: Notification preferences
+    description: Choose the channels through which you want to receive notifications.
+    empty: No notification preferences available.
+    save: Save preferences
+    saved: Preferences saved
+    webPushPermissionDenied: You have blocked notifications. Allow them in your browser settings and try again.
+    webPushNotSupported: Web push notifications are not supported by your browser.
+    channels:
+      EMAIL: Email
+      SMS: SMS
+      PUSH: Push notifications
+      WEB_PUSH: Web push notifications
+      WEBSOCKET: Real-time notifications
+  deleteAccount:
+    title: Delete my account
+    description: This action is irreversible. By deleting your account, all your personal data, preferences and history will be permanently deleted from our servers.
+
+password:
+  show: Show password
+  hide: Hide password
+
+errors:
+  title: Error
+  generic: An error occurred.
+
+emailVerification:
+  title: Email Check
+  error: Verification failed
+  success:
+    title: Verification was successful
+    description: Your email has been successfully verified. You can now authenticate.
+
+emailChangeConfirmation:
+  title: Email address change confirmation
+  pending:
+    title: Almost there!
+    description: We are confirming your new email address. This page will reload automatically when the operation is complete.
+  success:
+    title: Email address updated
+    description: Your email address has been successfully updated. You can now log in with your new address.
+
+contact:
+  senderName: Sender Name
+  senderNamePlaceholder: John Doe
+  email: E-mail address
+  subject: Subject
+  subjectPlaceholder: Subject of your message
+  body: Message
+  bodyPlaceholder: Your message...
+  send: Send message
+  title: Contact
+  description: Send us a message, we will get back to you as soon as possible.
+
+cgu:
+  title: Terms of Service
+  s1:
+    title: '1. Acceptance of Terms'
+    content: >
+      By accessing or using this website or application (hereinafter "the Platform"),
+      you unreservedly accept these Terms of Service.
+      If you do not accept these terms, please do not use the Platform.
+  s2:
+    title: '2. Description of Service'
+    content: >
+      The Platform is a user interface designed to [briefly describe the purpose of the Platform,
+      for example: "provide basic features for developers or end users"].
+      Features may evolve without notice.
+  s3:
+    title: '3. Access and Use'
+    content: >
+      Access to the Platform is reserved for users with an internet connection.
+      You agree to use the Platform in compliance with applicable laws
+      and not to disrupt its operation.
+  s4:
+    title: '4. Intellectual Property'
+    content: >
+      All content, code, designs and trademarks on the Platform are the exclusive property
+      of [Company or Project Name].
+      Any unauthorized reproduction or use is prohibited.
+  s5:
+    title: '5. Liability'
+    content: >
+      The Platform is provided "as is". [Company or Project Name] does not guarantee
+      its uninterrupted or error-free operation.
+      You use the Platform at your own risk.
+  s6:
+    title: '6. Personal Data'
+    content: >
+      Data collected through the Platform is processed in accordance with our Privacy Policy.
+      We are committed to complying with applicable regulations, including the GDPR.
+  s7:
+    title: '7. Amendments to the Terms'
+    content: >
+      We reserve the right to modify these Terms at any time.
+      Changes will be published on this page and will take effect upon publication.
+  s8:
+    title: '8. Termination'
+    content: >
+      We reserve the right to suspend or terminate access to the Platform
+      for any user who fails to comply with these Terms.
+  s9:
+    title: '9. Applicable Law'
+    content: >
+      These Terms are governed by French law.
+      Any dispute shall be subject to the exclusive jurisdiction of the courts of [City or Country].
+  s10:
+    title: '10. Contact'
+    content: >
+      For any questions regarding the Terms, please contact us at: [email].
+
+legal-notice:
+  title: Legal Notice
+  s1:
+    title: '1. Publisher'
+    content: >
+      [Name / Company] — [Legal form] — [Share capital if applicable].
+      Registered office: [Full address]. SIRET: [SIRET number].
+      Contact: [email].
+  s2:
+    title: '2. Publication Director'
+    content: >
+      [First name Last name].
+  s3:
+    title: '3. Hosting'
+    content: >
+      [Host name], [Host address]. Website: [host url].
+  s4:
+    title: '4. Intellectual Property'
+    content: >
+      All content on this site (texts, images, logo) is the exclusive property
+      of [Name / Company], unless otherwise stated. Any reproduction is prohibited without prior authorization.
+  s5:
+    title: '5. Personal Data'
+    content: >
+      This site does not collect any personal data without your consent. In accordance with the GDPR,
+      you have the right to access, rectify and delete your data by contacting: [email].
+  s6:
+    title: '6. Cookies'
+    content: >
+      This site does not use cookies / only uses technical cookies necessary for its operation.

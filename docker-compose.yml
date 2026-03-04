@@ -1,0 +1,9 @@
+services:
+  frontend:
+    container_name: starter-frontend
+    build: .
+    ports:
+      - '8080:5173'
+    volumes:
+      - .:/app
+      - /app/node_modules
