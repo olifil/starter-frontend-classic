@@ -1,0 +1,6 @@
+services:
+  frontend:
+    container_name: starter-frontend
+    build: .
+    ports:
+      - '8080:80'

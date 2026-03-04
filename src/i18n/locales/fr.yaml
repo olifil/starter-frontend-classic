@@ -1,0 +1,301 @@
+common:
+  appName: Starter Frontend
+  cancel: Annuler
+  confirm: Confirmer
+  contact: Contactez-nous
+  delete: Supprimer
+  next: Suivant
+  previous: Précédent
+  save: Enregistrer
+  selectAll: Tout sélectionner
+
+home:
+  hero:
+    title: Starter Frontend
+    description: Un kit de démarrage Vue 3 moderne, prêt à l'emploi, avec authentification, notifications, gestion du profil et bien plus.
+  stack:
+    label: Construit avec
+  features:
+    title: Fonctionnalités incluses
+    auth:
+      title: Authentification JWT
+      description: Connexion, inscription, réinitialisation de mot de passe et vérification d'e-mail avec tokens d'accès et de rafraîchissement.
+    profile:
+      title: Gestion du profil
+      description: Modification des informations personnelles, changement d'adresse e-mail et de mot de passe, suppression de compte.
+    notifications:
+      title: Notifications
+      description: Historique paginé avec marquage lu/non-lu, suppression unitaire ou en lot et préférences de canaux.
+    i18n:
+      title: Internationalisation
+      description: Support multilingue (FR/EN) via vue-i18n et fichiers YAML, facilement extensible à d'autres langues.
+    architecture:
+      title: Architecture hexagonale
+      description: Séparation claire entre domaine, infrastructure et interface. Repositories, stores et types bien organisés.
+    stack:
+      title: Stack moderne
+      description: Vue 3, TypeScript, Vite, Pinia, Tailwind CSS v4 et shadcn-vue pour un développement rapide et robuste.
+
+auth:
+  login:
+    title: Connexion
+    description: Entrez vos identifiants pour accéder à votre compte.
+    submit: Se connecter
+    forgotPassword: Mot de passe oublié ?
+    noAccount: Pas encore de compte ?
+    signUp: S'inscrire
+  register:
+    title: Inscription
+    description: Créez votre compte pour commencer.
+    firstName: Prénom
+    firstNamePlaceholder: Jean
+    lastName: Nom
+    lastNamePlaceholder: Dupont
+    confirmPassword: Confirmer le mot de passe
+    termsAcceptedPrefix: "J'accepte les"
+    termsAcceptedLink: conditions d'utilisation
+    submit: S'inscrire
+    hasAccount: Déjà un compte ?
+    signIn: Se connecter
+  forgotPassword:
+    title: Mot de passe oublié
+    description: Entrez votre adresse e-mail pour recevoir un lien de réinitialisation.
+    submit: Envoyer le lien
+    backToLogin: Retour à la connexion
+  reset-password:
+    title: Réinitialisation du mot de passe
+    description: Entrez votre nouveau mot de passe et confirmez-le.
+    submit: Réinitialiser le mot de passe
+    success:
+      title: Mot de passe réinitialisé
+      description: Votre mot de passe a été réinitialisé. Vous pouvez désormais vous connecter.
+  errors:
+    loginFailed: Erreur lors de la connexion.
+    registerFailed: Erreur lors de l'inscription.
+    forgotPasswordFailed: Erreur lors de l'envoi du lien.
+
+field:
+  email: Adresse e-mail
+  emailPlaceholder: "nom{'@'}exemple.com"
+  password: Mot de passe
+  passwordPlaceholder: '••••••••'
+  phoneNumber: Numéro de téléphone
+  phoneNumberPlaceholder: '+33612345678'
+
+validation:
+  emailRequired: L'adresse e-mail est requise.
+  emailInvalid: L'adresse e-mail n'est pas valide.
+  phoneNumberInvalid: 'Le numéro de téléphone doit être au format E.164 (ex : +33612345678).'
+  passwordRequired: Le mot de passe est requis.
+  firstNameRequired: Le prénom est requis.
+  lastNameRequired: Le nom est requis.
+  passwordLength: Entre 8 et 128 caractères.
+  passwordLowercase: Au moins une lettre minuscule.
+  passwordUppercase: Au moins une lettre majuscule.
+  passwordDigit: Au moins un chiffre.
+  passwordSpecial: "Au moins un caractère spécial ({'@'}$!%*?&)."
+  passwordInvalidChars: Contient des caractères non autorisés.
+  confirmRequired: La confirmation est requise.
+  passwordMismatch: Les mots de passe ne correspondent pas.
+  termsAcceptedRequired: Vous devez accepter les conditions d'utilisation pour pouvoir vous inscrire.
+  senderNameRequired: Le nom de l'expéditeur est requis.
+  subjectRequired: Le sujet est requis.
+  bodyRequired: Le message est requis.
+
+header:
+  myAccount: Mon compte
+  profile: Profil
+  login: Connexion
+  signIn: Inscription
+  logout: Déconnexion
+
+admin:
+  nav:
+    home: Accueil
+    profile: Profil
+
+notifications:
+  title: Notifications
+  description: Historique de vos notifications reçues.
+  empty: Aucune notification à afficher.
+  open: Ouvrir
+  markAsRead: Marquer comme lue
+  delete: Supprimer
+  deleteConfirm:
+    title: Supprimer la notification
+    description: Cette action est irréversible. La notification sera définitivement supprimée.
+    cancel: Annuler
+    confirm: Supprimer
+  bulkActions:
+    placeholder: Sélectionner une action
+    markAsRead: Marquer comme lues
+    delete: Supprimer
+    apply: Appliquer
+    selected: '{count} sélectionnée(s)'
+  bulkDeleteConfirm:
+    title: Supprimer les notifications
+    description: Cette action est irréversible. Les {count} notification(s) sélectionnée(s) seront définitivement supprimées.
+    confirm: Supprimer
+
+profile:
+  title: Mon profil
+  description: Gérez les informations de votre compte et vos préférences.
+  info:
+    title: Informations personnelles
+    editTitle: Modifier mes informations
+    memberSince: Membre depuis
+  email:
+    title: Modifier mon adresse e-mail
+    description: Un e-mail de confirmation sera envoyé à votre nouvelle adresse.
+    newEmail: Nouvelle adresse e-mail
+    currentPassword: Mot de passe actuel
+    successTitle: E-mail de confirmation envoyé
+    successDescription: 'Un e-mail de confirmation a été envoyé à {email}. Cliquez sur le lien dans cet e-mail pour confirmer le changement.'
+  password:
+    title: Modifier le mot de passe
+    description: Pour modifier votre mot de passe, veuillez saisir votre mot de passe actuel.
+    currentPassword: Mot de passe actuel
+    newPassword: Nouveau mot de passe
+    confirmNewPassword: Confirmer le nouveau mot de passe
+  notifications:
+    title: Préférences de notifications
+    description: Choisissez les canaux par lesquels vous souhaitez recevoir des notifications.
+    empty: Aucune préférence de notification disponible.
+    save: Enregistrer les préférences
+    saved: Préférences enregistrées
+    webPushPermissionDenied: Vous avez refusé les notifications. Autorisez-les dans les paramètres de votre navigateur puis réessayez.
+    webPushNotSupported: Les notifications web push ne sont pas prises en charge par votre navigateur.
+    channels:
+      EMAIL: E-mail
+      SMS: SMS
+      PUSH: Notifications push
+      WEB_PUSH: Notifications web push
+      WEBSOCKET: Notifications en temps réel
+  deleteAccount:
+    title: Supprimer mon compte
+    description: Cette action est irréversible. En supprimant votre compte, toutes vos données personnelles, vos préférences et votre historique seront définitivement effacés de nos serveurs.
+
+password:
+  show: Afficher le mot de passe
+  hide: Masquer le mot de passe
+
+errors:
+  title: Erreur
+  generic: Une erreur est survenue.
+
+emailVerification:
+  title: Verification de l'email
+  error: La vérification a échoué
+  success:
+    title: La vérification a réussi
+    description: Votre email a été vérifié avec succès. Vous pouvez désormais vous authentifier.
+
+emailChangeConfirmation:
+  title: Confirmation du changement d'adresse e-mail
+  pending:
+    title: C'est presque prêt !
+    description: Nous confirmons votre nouvelle adresse e-mail. Cette page se rechargera automatiquement lorsque l'opération sera terminée.
+  success:
+    title: Adresse e-mail mise à jour
+    description: Votre adresse e-mail a été mise à jour avec succès. Vous pouvez désormais vous connecter avec votre nouvelle adresse.
+
+contact:
+  senderName: Nom de l'expéditeur
+  senderNamePlaceholder: Jean Dupont
+  email: Adresse e-mail
+  subject: Sujet
+  subjectPlaceholder: Objet de votre message
+  body: Message
+  bodyPlaceholder: Votre message...
+  send: Envoyer le message
+  title: Contact
+  description: Envoyez-nous un message, nous vous répondrons dans les plus brefs délais.
+
+cgu:
+  title: Conditions Générales d'Utilisation
+  s1:
+    title: '1. Acceptation des CGU'
+    content: >
+      En accédant ou en utilisant ce site ou cette application (ci-après « la Plateforme »),
+      vous acceptez sans réserve les présentes Conditions Générales d'Utilisation.
+      Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser la Plateforme.
+  s2:
+    title: '2. Description du service'
+    content: >
+      La Plateforme est une interface utilisateur conçue pour [décrire brièvement le but de la Plateforme,
+      par exemple : "faciliter l'accès à des fonctionnalités de base pour les développeurs ou utilisateurs finaux"].
+      Les fonctionnalités peuvent évoluer sans préavis.
+  s3:
+    title: '3. Accès et utilisation'
+    content: >
+      L'accès à la Plateforme est réservé aux utilisateurs disposant d'une connexion internet.
+      Vous vous engagez à utiliser la Plateforme conformément aux lois en vigueur
+      et à ne pas perturber son fonctionnement.
+  s4:
+    title: '4. Propriété intellectuelle'
+    content: >
+      Tous les contenus, codes, designs et marques présents sur la Plateforme
+      sont la propriété exclusive de [Nom de l'entreprise ou du projet].
+      Toute reproduction ou utilisation non autorisée est interdite.
+  s5:
+    title: '5. Responsabilités'
+    content: >
+      La Plateforme est fournie « en l'état ». [Nom de l'entreprise ou du projet]
+      ne garantit pas son fonctionnement ininterrompu ou sans erreur.
+      Vous utilisez la Plateforme à vos propres risques.
+  s6:
+    title: '6. Données personnelles'
+    content: >
+      Les données collectées via la Plateforme sont traitées conformément à notre Politique de Confidentialité.
+      Nous nous engageons à respecter les réglementations en vigueur, notamment le RGPD.
+  s7:
+    title: '7. Modification des CGU'
+    content: >
+      Nous nous réservons le droit de modifier les présentes CGU à tout moment.
+      Les modifications seront publiées sur cette page et entreront en vigueur dès leur publication.
+  s8:
+    title: '8. Résiliation'
+    content: >
+      Nous nous réservons le droit de suspendre ou résilier l'accès à la Plateforme
+      à tout utilisateur ne respectant pas les présentes CGU.
+  s9:
+    title: '9. Loi applicable'
+    content: >
+      Les présentes CGU sont régies par le droit français.
+      Tout litige sera soumis à la compétence exclusive des tribunaux de [Ville ou Pays].
+  s10:
+    title: '10. Contact'
+    content: >
+      Pour toute question concernant les CGU, contactez-nous à l'adresse suivante : [email].
+
+legal-notice:
+  title: Mentions légales
+  s1:
+    title: '1. Éditeur du site'
+    content: >
+      [Nom / Raison sociale] — [Forme juridique] — [Capital social si applicable].
+      Siège social : [Adresse complète]. SIRET : [Numéro SIRET].
+      Contact : [email].
+  s2:
+    title: '2. Directeur de la publication'
+    content: >
+      [Prénom Nom].
+  s3:
+    title: '3. Hébergement'
+    content: >
+      [Nom de l'hébergeur], [Adresse de l'hébergeur]. Site : [url hébergeur].
+  s4:
+    title: '4. Propriété intellectuelle'
+    content: >
+      L'ensemble des contenus présents sur ce site (textes, images, logo) est la propriété exclusive
+      de [Nom / Raison sociale], sauf mention contraire. Toute reproduction est interdite sans autorisation préalable.
+  s5:
+    title: '5. Données personnelles'
+    content: >
+      Ce site ne collecte aucune donnée personnelle sans votre consentement. Conformément au RGPD,
+      vous disposez d'un droit d'accès, de rectification et de suppression de vos données
+      en contactant : [email].
+  s6:
+    title: '6. Cookies'
+    content: >
+      Ce site n'utilise pas de cookies / utilise uniquement des cookies techniques nécessaires à son fonctionnement.
